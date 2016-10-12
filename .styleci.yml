@@ -7,3 +7,4 @@ enabled:
     - phpdoc_order
     - short_array_syntax
     - strict_param
+    - declare_strict_types
