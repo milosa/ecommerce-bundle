@@ -1,18 +1,12 @@
 <?php
-declare(strict_types = 1);
+
+declare(strict_types=1);
 
 namespace Milosa\EcommerceSymfony\Tests\Functional\Catalog\Infrastructure\Controller;
 
-
-use Milosa\EcommerceSymfony\Catalog\Infrastructure\Controller\ProductController;
-use Milosa\Ecommerce\Catalog\Infrastructure\Persistence\InMemoryProductRepository;
-use Milosa\Ecommerce\Catalog\Application\Service\Product\ViewProductRequest;
-use Milosa\Ecommerce\Catalog\Application\Service\Product\ViewProductService;
 use Milosa\Ecommerce\Catalog\Domain\Catalog\Product\Product;
 use Milosa\Ecommerce\Catalog\Domain\Catalog\Product\ProductId;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
-use Symfony\Component\HttpFoundation\Response;
-
 
 class ProductControllerTest extends WebTestCase
 {
