@@ -1,5 +1,3 @@
-imports:
-    - { resource: "@MilosaEcommerceSymfonyBundle/Resources/config/services.xml" }
 framework:
     translator:         { fallback: en }
     secret:              test
