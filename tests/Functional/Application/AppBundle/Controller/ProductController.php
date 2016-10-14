@@ -16,12 +16,16 @@ class ProductController extends Controller
         $viewProductService = $this->get('view_product_service');
         $request = new ViewProductRequest($productId);
         try {
-            $viewProductService->execute($request);
+            $product = $viewProductService->execute($request);
         } catch (ProductNotFoundException $e) {
             throw $this->createNotFoundException('The product does not exist');
         }
 
+        //$response = new Response('<h1>'.$product->name().'</h1><p>ID:'.$product->id()->id().'</p>');
 
-        return new Response();
+
+
+
+        return $this->render('MilosaEcommerceBundle::product.html.twig', ['product_name' => $product->name(), 'product_id' => $product->id()->id()]);
     }
 }

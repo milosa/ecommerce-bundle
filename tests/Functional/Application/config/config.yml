@@ -12,3 +12,5 @@ framework:
     session:
         storage_id: session.storage.filesystem
     test: ~
+twig:
+    debug: true

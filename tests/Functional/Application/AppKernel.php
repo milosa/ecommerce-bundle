@@ -33,7 +33,7 @@ class AppKernel extends Kernel
             new TwigBundle(),
             new MilosaEcommerceBundle(),
 
-            new AppBundle()
+            new AppBundle(),
         ];
 
         return $bundles;
