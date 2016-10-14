@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Milosa\EcommerceSymfony\Catalog\Infrastructure\Controller;
+namespace Milosa\EcommerceBundle\Tests\Functional\Application\AppBundle\Controller;
 
 use Milosa\Ecommerce\Catalog\Application\Service\Product\ProductNotFoundException;
 use Milosa\Ecommerce\Catalog\Application\Service\Product\ViewProductRequest;

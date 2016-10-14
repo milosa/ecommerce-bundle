@@ -2,7 +2,7 @@ framework:
     translator:         { fallback: en }
     secret:              test
     router:
-        resource: "@MilosaEcommerceSymfonyBundle/Resources/config/routing/product.xml"
+        resource: "%kernel.root_dir%/config/routing.xml"
         strict_requirements: %kernel.debug%
     csrf_protection:     true
     validation:          { enable_annotations: false }

@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Milosa\EcommerceSymfony\Tests\Functional\Catalog\Infrastructure\Controller;
+namespace Milosa\EcommerceBundle\Tests\Functional\Catalog\Infrastructure\Controller;
 
 use Milosa\Ecommerce\Catalog\Domain\Catalog\Product\Product;
 use Milosa\Ecommerce\Catalog\Domain\Catalog\Product\ProductId;
+
+
+use Milosa\EcommerceBundle\Tests\Functional\Application\AppKernel;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class ProductControllerTest extends WebTestCase
@@ -15,10 +18,17 @@ class ProductControllerTest extends WebTestCase
      */
     private $client;
 
+    protected static function createKernel(array $options = array())
+    {
+        return new AppKernel(
+            isset($options['config']) ? $options['config'] : 'config.yml'
+        );
+    }
+
     public function setUp()
     {
-        self::bootKernel();
-        $this->client = static::createClient();
+        //self::bootKernel();
+        $this->client = static::createClient(['config' => 'config.yml']);
     }
 
     public function testRequestingExistingProductIsSuccessful()

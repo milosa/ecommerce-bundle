@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Milosa\EcommerceSymfony\Tests\Unit\Catalog\Infrastructure\Controller;
+namespace Milosa\EcommerceBundle\Tests\Unit\Catalog\Infrastructure\Controller;
 
-use Milosa\EcommerceSymfony\Catalog\Infrastructure\Controller\ProductController;
+use Milosa\EcommerceBundle\Catalog\Infrastructure\Controller\ProductController;
 use Symfony\Component\HttpFoundation\Response;
 
 class ProductControllerTest extends \PHPUnit_Framework_TestCase

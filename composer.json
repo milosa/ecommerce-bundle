@@ -34,7 +34,7 @@
 
   "autoload": {
     "psr-4": {
-      "Milosa\\EcommerceSymfony\\": "src/"
+      "Milosa\\EcommerceBundle\\": "src/"
     }
   },
 
@@ -42,7 +42,7 @@
 
   "autoload-dev": {
     "psr-4": {
-      "Milosa\\EcommerceSymfony\\Tests\\": "tests/"
+      "Milosa\\EcommerceBundle\\Tests\\": "tests/"
     }
   }
 }

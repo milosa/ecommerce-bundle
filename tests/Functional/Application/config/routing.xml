@@ -5,6 +5,6 @@
         http://symfony.com/schema/routing/routing-1.0.xsd">
 
     <route id="milosa_product_view" path="/product/{productId}">
-        <default key="_controller">Milosa\EcommerceSymfony\Catalog\Infrastructure\Controller\ProductController::viewAction</default>
+        <default key="_controller">AppBundle:Product:view</default>
     </route>
 </routes>
