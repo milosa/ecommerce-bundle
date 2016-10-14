@@ -6,8 +6,6 @@ namespace Milosa\EcommerceBundle\Tests\Functional\Catalog\Infrastructure\Control
 
 use Milosa\Ecommerce\Catalog\Domain\Catalog\Product\Product;
 use Milosa\Ecommerce\Catalog\Domain\Catalog\Product\ProductId;
-
-
 use Milosa\EcommerceBundle\Tests\Functional\Application\AppKernel;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
@@ -18,7 +16,7 @@ class ProductControllerTest extends WebTestCase
      */
     private $client;
 
-    protected static function createKernel(array $options = array())
+    protected static function createKernel(array $options = [])
     {
         return new AppKernel(
             isset($options['config']) ? $options['config'] : 'config.yml'
